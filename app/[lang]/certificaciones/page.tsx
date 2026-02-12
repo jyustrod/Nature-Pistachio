@@ -13,38 +13,37 @@ export default async function CertificationsPage({ params }: PageProps) {
 
   return (
     <>
-      {/* Hero */}
       <Hero
         lang={lang}
         title={t('certifications.title')}
         description={t('certifications.description')}
-        backgroundImage="https://via.placeholder.com/1920x600?text=Certificaciones"
+        backgroundImage="/images/hero-certifications.jpg"
+        compact
       />
 
       {/* Certifications Grid */}
       <CertificationGrid certifications={certifications} lang={lang} />
 
       {/* Additional Info */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-primary-50">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-muted">
         <div className="mx-auto max-w-4xl">
-          <h2 className="text-3xl font-bold text-center mb-8 text-gray-900">
-            Compromiso con la Excelencia
-          </h2>
-          <p className="text-gray-700 text-lg mb-6 text-center">
-            Nuestras certificaciones no son solo documentos; son el reflejo de nuestro
-            compromiso diario con la calidad, seguridad y sostenibilidad.
-          </p>
-          <div className="bg-white rounded-lg shadow-md p-8">
-            <p className="text-gray-700 mb-4">
-              Cada certificación representa años de trabajo, inversión en tecnología
-              y formación continua de nuestro equipo. Nos sometemos regularmente a
-              auditorías independientes para verificar que cumplimos y superamos
-              los requisitos establecidos.
+          <div className="text-center mb-12">
+            <div className="w-16 h-0.5 bg-secondary mx-auto mb-6" />
+            <h2 className="text-3xl font-sans font-bold text-foreground">
+              {lang === 'es' ? 'Compromiso con la Excelencia' : 'Commitment to Excellence'}
+            </h2>
+          </div>
+
+          <div className="bg-card rounded-2xl border border-border p-8 md:p-12">
+            <p className="text-muted-foreground font-body leading-relaxed mb-6">
+              {lang === 'es'
+                ? 'Cada certificacion representa anos de trabajo, inversion en tecnologia y formacion continua de nuestro equipo. Nos sometemos regularmente a auditorias independientes para verificar que cumplimos y superamos los requisitos establecidos.'
+                : 'Each certification represents years of work, investment in technology and continuous training. We regularly undergo independent audits to verify compliance.'}
             </p>
-            <p className="text-gray-700">
-              Para nuestros clientes distribuidores, esto significa tranquilidad y
-              seguridad: sus productos finales cumplen con todos los estándares
-              internacionales más exigentes.
+            <p className="text-muted-foreground font-body leading-relaxed">
+              {lang === 'es'
+                ? 'Para nuestros clientes distribuidores, esto significa tranquilidad y seguridad: sus productos finales cumplen con todos los estandares internacionales mas exigentes.'
+                : 'For our distributor clients, this means peace of mind: their final products meet all demanding international standards.'}
             </p>
           </div>
         </div>

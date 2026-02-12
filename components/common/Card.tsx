@@ -19,30 +19,37 @@ export function Card({
   link,
 }: CardProps) {
   return (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+    <div className="group bg-card rounded-2xl overflow-hidden border border-border hover:border-primary/30 transition-all hover:shadow-xl hover:shadow-primary/5">
       {/* Image */}
-      <div className="relative h-48 bg-gray-200 overflow-hidden">
+      <div className="relative h-56 overflow-hidden">
         <Image
           src={image}
           alt={title}
           fill
-          className="object-cover hover:scale-105 transition-transform duration-300"
+          className="object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
         />
+        <div className="absolute inset-0 bg-gradient-to-t from-earth-950/30 to-transparent" />
       </div>
 
       {/* Content */}
       <div className="p-6">
-        {icon && <div className="mb-4 text-3xl">{icon}</div>}
-        <h3 className="text-lg font-semibold text-gray-900 mb-2">{title}</h3>
-        <p className="text-gray-600 text-sm mb-4">{description}</p>
+        {icon && <div className="mb-3 text-2xl text-primary">{icon}</div>}
+        <h3 className="text-lg font-sans font-bold text-card-foreground mb-2 leading-snug">
+          {title}
+        </h3>
+        <p className="text-muted-foreground text-sm font-body leading-relaxed mb-4">
+          {description}
+        </p>
 
         {link && (
           <a
             href={link.href}
-            className="text-primary-600 font-semibold hover:text-primary-700 transition-colors inline-flex items-center gap-2"
+            className="inline-flex items-center gap-2 text-primary font-body font-bold text-sm tracking-wide uppercase group-hover:gap-3 transition-all"
           >
             {link.label}
-            <span>→</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="transition-transform group-hover:translate-x-1">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
           </a>
         )}
       </div>

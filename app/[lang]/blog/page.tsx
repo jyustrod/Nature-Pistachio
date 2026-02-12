@@ -13,16 +13,16 @@ export default async function BlogPage({ params }: PageProps) {
 
   return (
     <>
-      {/* Hero */}
       <Hero
         lang={lang}
         title={t('blog.title')}
         description={t('blog.description')}
-        backgroundImage="https://via.placeholder.com/1920x600?text=Blog"
+        backgroundImage="/images/hero-blog.jpg"
+        compact
       />
 
       {/* Blog Articles */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
+      <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {blogArticles.map((article) => (

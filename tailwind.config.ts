@@ -8,49 +8,66 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Colores naturales para Nature Pistachio
-        primary: {
-          50: '#f0fdf4',
-          100: '#dcfce7',
-          200: '#bbf7d0',
-          300: '#86efac',
-          400: '#4ade80',
-          500: '#22c55e', // Verde principal
-          600: '#16a34a',
-          700: '#15803d',
-          800: '#166534',
-          900: '#145231',
-          950: '#052e16',
+        background: 'var(--background)',
+        foreground: 'var(--foreground)',
+        card: {
+          DEFAULT: 'var(--card)',
+          foreground: 'var(--card-foreground)',
         },
+        primary: {
+          DEFAULT: 'var(--primary)',
+          foreground: 'var(--primary-foreground)',
+          50: '#f0f7f2',
+          100: '#dceee1',
+          200: '#b9dcc4',
+          300: '#8dc4a0',
+          400: '#6aab7e',
+          500: '#4a7c59',
+          600: '#3d6a4b',
+          700: '#33563e',
+          800: '#2b4533',
+          900: '#24392b',
+          950: '#121f17',
+        },
+        secondary: {
+          DEFAULT: 'var(--secondary)',
+          foreground: 'var(--secondary-foreground)',
+        },
+        muted: {
+          DEFAULT: 'var(--muted)',
+          foreground: 'var(--muted-foreground)',
+        },
+        accent: {
+          DEFAULT: 'var(--accent)',
+          foreground: 'var(--accent-foreground)',
+        },
+        border: 'var(--border)',
+        input: 'var(--input)',
+        ring: 'var(--ring)',
         earth: {
-          50: '#faf5f0',
-          100: '#f5ede5',
-          200: '#e8d5c4',
-          300: '#dab8a0',
-          400: '#c89968',
-          500: '#b8804d',
-          600: '#a36d42',
+          50: '#faf8f5',
+          100: '#f0ebe4',
+          200: '#e8dfd3',
+          300: '#ddd5c9',
+          400: '#c8a96e',
+          500: '#b8945a',
+          600: '#a37d42',
           700: '#875a38',
           800: '#6b4423',
-          900: '#564337',
-          950: '#2d211a',
-        },
-        nature: {
-          light: '#f5f5f0',
-          dark: '#1a1a1a',
+          900: '#2d2418',
+          950: '#1a150e',
         },
       },
       fontFamily: {
-        sans: ['var(--font-geist-sans)', 'system-ui', 'sans-serif'],
+        sans: ['var(--font-playfair)', 'Georgia', 'serif'],
+        body: ['var(--font-lato)', 'system-ui', 'sans-serif'],
         mono: ['var(--font-geist-mono)', 'monospace'],
       },
-      spacing: {
-        '128': '32rem',
-        '144': '36rem',
-      },
       animation: {
-        'fade-in': 'fadeIn 0.5s ease-in-out',
-        'slide-up': 'slideUp 0.5s ease-out',
+        'fade-in': 'fadeIn 0.8s ease-out',
+        'slide-up': 'slideUp 0.8s ease-out',
+        'slide-down': 'slideDown 0.4s ease-out',
+        'scale-in': 'scaleIn 0.5s ease-out',
       },
       keyframes: {
         fadeIn: {
@@ -58,8 +75,16 @@ const config: Config = {
           '100%': { opacity: '1' },
         },
         slideUp: {
-          '0%': { transform: 'translateY(20px)', opacity: '0' },
+          '0%': { transform: 'translateY(30px)', opacity: '0' },
           '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
+        slideDown: {
+          '0%': { transform: 'translateY(-10px)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
+        scaleIn: {
+          '0%': { transform: 'scale(0.95)', opacity: '0' },
+          '100%': { transform: 'scale(1)', opacity: '1' },
         },
       },
     },

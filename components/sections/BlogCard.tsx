@@ -10,41 +10,46 @@ interface BlogCardProps {
 
 export function BlogCard({ article, lang }: BlogCardProps) {
   return (
-    <article className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-      <div className="relative h-48 bg-gray-200 overflow-hidden">
+    <article className="group bg-card rounded-2xl overflow-hidden border border-border hover:border-primary/30 transition-all hover:shadow-xl hover:shadow-primary/5">
+      <div className="relative h-56 overflow-hidden">
         <Image
           src={article.image}
           alt={article.title}
           fill
-          className="object-cover hover:scale-105 transition-transform duration-300"
+          className="object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
         />
+        <div className="absolute inset-0 bg-gradient-to-t from-earth-950/40 to-transparent" />
         {article.featured && (
-          <div className="absolute top-4 right-4 bg-primary-600 text-white px-3 py-1 rounded-full text-xs font-semibold">
+          <div className="absolute top-4 right-4 bg-secondary text-secondary-foreground px-4 py-1.5 rounded-full text-xs font-body font-bold tracking-wider uppercase">
             Destacado
           </div>
         )}
       </div>
 
       <div className="p-6">
-        <div className="flex items-center justify-between mb-3">
-          <span className="text-xs text-gray-500 font-medium">
+        <div className="flex items-center justify-between mb-4">
+          <span className="text-xs text-muted-foreground font-body tracking-wide">
             {getTranslation(lang, 'blog.postedOn')} {article.date}
           </span>
-          <span className="text-xs text-primary-600 font-medium">{article.author}</span>
+          <span className="text-xs text-primary font-body font-bold">{article.author}</span>
         </div>
 
-        <h3 className="text-xl font-semibold text-gray-900 mb-2">
+        <h3 className="text-xl font-sans font-bold text-card-foreground mb-3 leading-snug">
           {article.title}
         </h3>
 
-        <p className="text-gray-600 text-sm mb-4">{article.excerpt}</p>
+        <p className="text-muted-foreground text-sm font-body leading-relaxed mb-5">
+          {article.excerpt}
+        </p>
 
         <Link
           href={`/${lang}/blog/${article.slug}`}
-          className="text-primary-600 font-semibold hover:text-primary-700 transition-colors inline-flex items-center gap-2"
+          className="inline-flex items-center gap-2 text-primary font-body font-bold text-sm tracking-wide uppercase group-hover:gap-3 transition-all"
         >
           {getTranslation(lang, 'blog.readMore')}
-          <span>→</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="transition-transform group-hover:translate-x-1">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
         </Link>
       </div>
     </article>

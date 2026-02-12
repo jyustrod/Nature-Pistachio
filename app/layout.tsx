@@ -1,23 +1,31 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import type { Metadata, Viewport } from "next";
+import { Playfair_Display, Lato } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const playfair = Playfair_Display({
+  variable: "--font-playfair",
   subsets: ["latin"],
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const lato = Lato({
+  variable: "--font-lato",
   subsets: ["latin"],
+  weight: ["300", "400", "700", "900"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
   title: "Nature Pistachio | Pistacho Premium para Distribuidores",
-  description: "Cooperativa de pistacho ecológico de excelencia con tecnología avanzada y trazabilidad completa. Partner de distribuidores globales.",
-  keywords: "pistacho, frutos secos, distribuidor, ecológico, sostenible",
-  viewport: "width=device-width, initial-scale=1.0",
+  description: "Cooperativa de pistacho ecologico de excelencia con tecnologia avanzada y trazabilidad completa. Partner de distribuidores globales.",
+  keywords: "pistacho, frutos secos, distribuidor, ecologico, sostenible",
   robots: "index, follow",
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1.0,
+  themeColor: "#4a7c59",
 };
 
 export default function RootLayout({
@@ -31,7 +39,7 @@ export default function RootLayout({
         <meta charSet="utf-8" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white text-gray-900`}
+        className={`${playfair.variable} ${lato.variable} antialiased`}
       >
         {children}
       </body>
