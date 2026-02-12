@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { Hero, Card } from '@/components/common';
 import { getTranslation } from '@/lib/translations';
 
@@ -16,7 +15,7 @@ export default async function CommercializationPage({ params }: PageProps) {
         lang={lang}
         title={t('commercialization.title')}
         description={t('commercialization.description')}
-        backgroundImage="/images/hero-commerce.jpg"
+        backgroundColor="green"
         compact
       />
 
@@ -32,18 +31,18 @@ export default async function CommercializationPage({ params }: PageProps) {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
             <Card
-              title={lang === 'es' ? 'Mercados Europeos' : 'European Markets'}
-              description={lang === 'es' ? 'Presencia consolidada en mas de 15 paises europeos con distribuidores especializados' : 'Consolidated presence in over 15 European countries'}
+              title={lang === 'es' ? 'Distribucion Nacional' : 'National Distribution'}
+              description={lang === 'es' ? 'Comenzamos con distribuidores especializados en el mercado nacional' : 'Starting with specialized distributors in the national market'}
               image="/images/card-europe.jpg"
             />
             <Card
-              title={lang === 'es' ? 'Mercados Internacionales' : 'International Markets'}
-              description={lang === 'es' ? 'Exportamos a Asia, America y Oriente Medio con logistica especializada' : 'Exporting to Asia, Americas and Middle East'}
+              title={lang === 'es' ? 'Expansion Internacional' : 'International Expansion'}
+              description={lang === 'es' ? 'Explorando oportunidades en mercados internacionales con socios de confianza' : 'Exploring opportunities in international markets with trusted partners'}
               image="/images/card-global.jpg"
             />
             <Card
-              title={lang === 'es' ? 'Logistica Optimizada' : 'Optimized Logistics'}
-              description={lang === 'es' ? 'Sistemas de transporte refrigerado y almacenaje en optimas condiciones' : 'Refrigerated transport and optimal storage systems'}
+              title={lang === 'es' ? 'Logistica Cuidadosa' : 'Careful Logistics'}
+              description={lang === 'es' ? 'Sistemas de transporte y almacenaje que garantizan la calidad del producto' : 'Transport and storage systems that guarantee product quality'}
               image="/images/card-logistics.jpg"
             />
           </div>
@@ -63,31 +62,31 @@ export default async function CommercializationPage({ params }: PageProps) {
           <div className="space-y-4">
             {[
               {
-                title: lang === 'es' ? 'Suministro Flexible' : 'Flexible Supply',
+                title: lang === 'es' ? 'Trato Directo' : 'Direct Contact',
                 desc: lang === 'es'
-                  ? 'Adaptamos nuestros volumenes de entrega a tus necesidades, desde pequenos lotes hasta cargas completas de contenedor.'
-                  : 'We adapt our delivery volumes to your needs, from small batches to full container loads.',
+                  ? 'Trabajamos de forma cercana con cada distribuidor, adaptando entregas a sus necesidades reales.'
+                  : 'We work closely with each distributor, adapting deliveries to their actual needs.',
                 color: 'bg-primary',
               },
               {
                 title: lang === 'es' ? 'Documentacion Completa' : 'Complete Documentation',
                 desc: lang === 'es'
-                  ? 'Certificados de origen, analisis de laboratorio, certificaciones de trazabilidad y documentos aduanales listos.'
-                  : 'Certificates of origin, lab analysis, traceability certifications and customs documents ready.',
+                  ? 'Certificados de origen, analisis de laboratorio y documentos de trazabilidad listos para cada envio.'
+                  : 'Certificates of origin, lab analysis and traceability documents ready for each shipment.',
                 color: 'bg-secondary',
               },
               {
                 title: lang === 'es' ? 'Soporte Tecnico' : 'Technical Support',
                 desc: lang === 'es'
-                  ? 'Asesoramiento en almacenaje, manipulacion y transporte para garantizar la maxima calidad en destino.'
-                  : 'Advisory on storage, handling and transport to ensure maximum quality at destination.',
+                  ? 'Asesoramiento en almacenaje y manipulacion para garantizar la calidad en destino.'
+                  : 'Advisory on storage and handling to ensure quality at destination.',
                 color: 'bg-primary',
               },
               {
-                title: lang === 'es' ? 'Precios Competitivos' : 'Competitive Pricing',
+                title: lang === 'es' ? 'Transparencia' : 'Transparency',
                 desc: lang === 'es'
-                  ? 'Margenes atractivos para distribuidores con volumenes garantizados y condiciones de pago flexibles.'
-                  : 'Attractive margins for distributors with guaranteed volumes and flexible payment terms.',
+                  ? 'Comunicacion clara sobre disponibilidad, calidad y condiciones en cada campana.'
+                  : 'Clear communication about availability, quality and conditions each season.',
                 color: 'bg-secondary',
               },
             ].map((item, i) => (
@@ -108,27 +107,20 @@ export default async function CommercializationPage({ params }: PageProps) {
       </section>
 
       {/* CTA */}
-      <section className="relative py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
-        <Image
-          src="/images/hero-commerce.jpg"
-          alt=""
-          fill
-          className="object-cover"
-        />
-        <div className="absolute inset-0 bg-earth-900/85" />
+      <section className="relative py-24 px-4 sm:px-6 lg:px-8 overflow-hidden bg-white">
         <div className="relative z-10 mx-auto max-w-3xl text-center">
-          <div className="w-16 h-0.5 bg-secondary mx-auto mb-6" />
-          <h2 className="text-3xl font-sans font-bold text-white mb-5 text-balance">
-            {lang === 'es' ? 'Conviertete en Distribuidor Nature Pistachio' : 'Become a Nature Pistachio Distributor'}
+          <div className="w-16 h-0.5 bg-primary mx-auto mb-6" />
+          <h2 className="text-3xl font-sans font-bold text-foreground mb-5 text-balance">
+            {lang === 'es' ? 'Trabaja con Nature Pistachio' : 'Work with Nature Pistachio'}
           </h2>
-          <p className="text-white/80 mb-10 text-lg font-body">
+          <p className="text-muted-foreground mb-10 text-lg font-body">
             {lang === 'es'
-              ? 'Unete a nuestra red de distribuidores premium en toda Europa y el mundo.'
-              : 'Join our premium distributor network across Europe and the world.'}
+              ? 'Contactanos para conocer mas sobre nuestra cooperativa y nuestro pistacho de calidad.'
+              : 'Contact us to learn more about our cooperative and our quality pistachio.'}
           </p>
           <a
             href={`/${lang}/contacto`}
-            className="inline-flex items-center justify-center px-10 py-4 bg-secondary text-secondary-foreground font-body font-bold text-sm tracking-wider uppercase rounded-full hover:bg-secondary/90 transition-all hover:shadow-xl"
+            className="inline-flex items-center justify-center px-10 py-4 bg-primary text-primary-foreground font-body font-bold text-sm tracking-wider uppercase rounded-full hover:bg-primary-600 transition-all hover:shadow-xl"
           >
             {lang === 'es' ? 'Solicitar Informacion Comercial' : 'Request Commercial Information'}
           </a>

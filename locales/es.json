@@ -15,21 +15,21 @@
   },
   "home": {
     "title": "Nature Pistachio",
-    "heroTitle": "Pistacho de Excelencia para Distribuidores Globales",
-    "heroDescription": "Calidad, trazabilidad y tecnología desde el campo hasta tu puerta. Somos tu socio de confianza en frutos secos premium.",
+    "heroTitle": "Pistacho de una cooperativa joven y cercana",
+    "heroDescription": "Somos una cooperativa pequeña y reciente. Cuidamos cada lote con trazabilidad y trato directo, creciendo de forma responsable.",
     "featuredSection": "Destacados",
     "learnMore": "Saber Más"
   },
   "about": {
     "title": "Quiénes Somos",
-    "subtitle": "Nature Pistachio - Cooperativa de Excelencia",
-    "description": "Nature Pistachio es una cooperativa de agricultores pionera en el cultivo sostenible y procesado profesional de pistacho de alta calidad. Con más de 20 años de experiencia, nos dedicamos a ofrecer productos certificados a distribuidores nacionales e internacionales.",
+    "subtitle": "Cooperativa joven y cercana",
+    "description": "Nature Pistachio es una cooperativa reciente de agricultores en Corral de Almaguer, unida para cultivar y procesar pistacho de calidad. Empezamos a pequeña escala, con procesos claros y un crecimiento responsable junto a distribuidores que valoran el origen.",
     "mission": "Nuestra Misión",
-    "missionText": "Producir pistacho de excelencia mediante prácticas sostenibles y tecnología avanzada, posicionándonos como líderes en calidad y confiabilidad.",
+    "missionText": "Producir pistacho de alta calidad con prácticas sostenibles, priorizando cercanía, transparencia y consistencia en cada campaña.",
     "vision": "Nuestra Visión",
-    "visionText": "Ser el partner preferido de distribuidores y empresas alimentarias en todo el mundo.",
+    "visionText": "Crecer paso a paso con socios comerciales que aprecian una cooperativa joven y comprometida.",
     "values": "Nuestros Valores",
-    "valuesList": "Sostenibilidad | Transparencia | Calidad | Innovación | Compromiso con el cliente"
+    "valuesList": "Cercanía | Transparencia | Calidad | Cuidado del campo | Crecimiento responsable"
   },
   "pistachio": {
     "title": "Nuestro Pistacho",
@@ -65,7 +65,7 @@
   },
   "commercialization": {
     "title": "Comercialización",
-    "description": "Distribuimos pistacho de alta calidad directamente desde nuestra planta cooperativa"
+    "description": "Distribuimos pistacho de calidad desde nuestra planta en Corral de Almaguer, con trato directo y lotes cuidados"
   },
   "blog": {
     "title": "Noticias y Blog",

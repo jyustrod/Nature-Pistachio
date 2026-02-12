@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { Hero, Card } from '@/components/common';
 import { getTranslation } from '@/lib/translations';
 
@@ -16,7 +15,7 @@ export default async function OurPistachioPage({ params }: PageProps) {
         lang={lang}
         title={t('pistachio.title')}
         description={t('pistachio.description')}
-        backgroundImage="/images/hero-pistachio.jpg"
+        backgroundColor="earth"
         compact
       />
 
@@ -125,27 +124,20 @@ export default async function OurPistachioPage({ params }: PageProps) {
       </section>
 
       {/* CTA */}
-      <section className="relative py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
-        <Image
-          src="/images/hero-pistachio.jpg"
-          alt=""
-          fill
-          className="object-cover"
-        />
-        <div className="absolute inset-0 bg-primary/85" />
+      <section className="relative py-24 px-4 sm:px-6 lg:px-8 overflow-hidden bg-white">
         <div className="relative z-10 mx-auto max-w-3xl text-center">
-          <div className="w-16 h-0.5 bg-secondary mx-auto mb-6" />
-          <h2 className="text-3xl font-sans font-bold text-white mb-5 text-balance">
+          <div className="w-16 h-0.5 bg-primary mx-auto mb-6" />
+          <h2 className="text-3xl font-sans font-bold text-foreground mb-5 text-balance">
             {lang === 'es' ? 'Interesado en nuestro pistacho?' : 'Interested in our pistachio?'}
           </h2>
-          <p className="text-white/80 mb-10 text-lg font-body">
+          <p className="text-muted-foreground mb-10 text-lg font-body">
             {lang === 'es'
               ? 'Contacta con nuestro equipo comercial para conocer disponibilidad y terminos.'
               : 'Contact our sales team to learn about availability and terms.'}
           </p>
           <a
             href={`/${lang}/contacto`}
-            className="inline-flex items-center justify-center px-10 py-4 bg-white text-primary font-body font-bold text-sm tracking-wider uppercase rounded-full hover:bg-earth-50 transition-all hover:shadow-xl"
+            className="inline-flex items-center justify-center px-10 py-4 bg-primary text-primary-foreground font-body font-bold text-sm tracking-wider uppercase rounded-full hover:bg-primary-600 transition-all hover:shadow-xl"
           >
             {t('common.requestInfo')}
           </a>

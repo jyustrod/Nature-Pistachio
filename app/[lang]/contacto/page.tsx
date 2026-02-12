@@ -16,7 +16,7 @@ export default async function ContactPage({ params }: PageProps) {
         lang={lang}
         title={t('contact.title')}
         description={t('contact.description')}
-        backgroundImage="/images/hero-contact.jpg"
+        backgroundColor="primary"
         compact
       />
 

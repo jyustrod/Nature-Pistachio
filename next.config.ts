@@ -20,6 +20,7 @@ const nextConfig: NextConfig = {
         hostname: "**.example.com",
       },
     ],
+    unoptimized: true,
   },
 };
 

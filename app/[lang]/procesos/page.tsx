@@ -17,7 +17,7 @@ export default async function ProcessesPage({ params }: PageProps) {
         lang={lang}
         title={t('processes.title')}
         description={t('processes.description')}
-        backgroundImage="/images/hero-processes.jpg"
+        backgroundColor="secondary"
         compact
       />
 

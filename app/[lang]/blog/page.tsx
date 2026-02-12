@@ -17,7 +17,7 @@ export default async function BlogPage({ params }: PageProps) {
         lang={lang}
         title={t('blog.title')}
         description={t('blog.description')}
-        backgroundImage="/images/hero-blog.jpg"
+        backgroundColor="earth"
         compact
       />
 

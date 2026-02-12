@@ -15,21 +15,21 @@
   },
   "home": {
     "title": "Nature Pistachio",
-    "heroTitle": "Premium Pistachio for Global Distributors",
-    "heroDescription": "Quality, traceability and technology from field to door. We are your trusted partner in premium nuts.",
+    "heroTitle": "Pistachio from a young, close-knit cooperative",
+    "heroDescription": "We are a small, recently formed cooperative. We care for each lot with traceability and direct contact, growing responsibly.",
     "featuredSection": "Featured",
     "learnMore": "Learn More"
   },
   "about": {
     "title": "About Us",
-    "subtitle": "Nature Pistachio - Cooperative of Excellence",
-    "description": "Nature Pistachio is a pioneer cooperative of farmers dedicated to sustainable cultivation and professional processing of premium pistachio. With over 20 years of experience, we serve national and international distributors.",
+    "subtitle": "Young, close-knit cooperative",
+    "description": "Nature Pistachio is a recently formed cooperative of farmers in Corral de Almaguer, committed to quality pistachio. We started on a small scale, with clear processes and responsible growth alongside distributors who value origin.",
     "mission": "Our Mission",
-    "missionText": "To produce premium pistachio through sustainable practices and advanced technology, positioning ourselves as leaders in quality and reliability.",
+    "missionText": "Produce high-quality pistachio through sustainable practices, prioritizing closeness, transparency, and consistency each season.",
     "vision": "Our Vision",
-    "visionText": "To be the preferred partner of distributors and food companies worldwide.",
+    "visionText": "Grow step by step with commercial partners who appreciate a young, committed cooperative.",
     "values": "Our Values",
-    "valuesList": "Sustainability | Transparency | Quality | Innovation | Customer Commitment"
+    "valuesList": "Closeness | Transparency | Quality | Care for the land | Responsible growth"
   },
   "pistachio": {
     "title": "Our Pistachio",
@@ -65,7 +65,7 @@
   },
   "commercialization": {
     "title": "Commercialization",
-    "description": "We distribute premium pistachio directly from our cooperative plant"
+    "description": "We distribute quality pistachio from our plant in Corral de Almaguer, with direct contact and carefully handled lots"
   },
   "blog": {
     "title": "News and Blog",

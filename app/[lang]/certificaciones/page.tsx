@@ -17,7 +17,7 @@ export default async function CertificationsPage({ params }: PageProps) {
         lang={lang}
         title={t('certifications.title')}
         description={t('certifications.description')}
-        backgroundImage="/images/hero-certifications.jpg"
+        backgroundColor="secondary"
         compact
       />
 

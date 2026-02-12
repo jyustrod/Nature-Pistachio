@@ -16,7 +16,7 @@ export default async function SustainabilityPage({ params }: PageProps) {
         lang={lang}
         title={t('sustainability.title')}
         description={t('sustainability.description')}
-        backgroundImage="/images/hero-sustainability.jpg"
+        backgroundColor="green"
         compact
       />
 
@@ -68,36 +68,36 @@ export default async function SustainabilityPage({ params }: PageProps) {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {[
               {
-                title: lang === 'es' ? 'Reduccion de Emisiones' : 'Emissions Reduction',
+                title: lang === 'es' ? 'Energia Renovable' : 'Renewable Energy',
                 desc: lang === 'es'
-                  ? 'Nuestras instalaciones han reducido las emisiones de carbono en un 45% mediante el uso de energias renovables y optimizacion de procesos.'
-                  : 'Our facilities have reduced carbon emissions by 45% through renewable energy and process optimization.',
-                stat: '45%',
-                statLabel: lang === 'es' ? 'menos emisiones CO2' : 'less CO2 emissions',
+                  ? 'Invertimos en energia renovable desde el inicio, priorizando paneles solares en nuestras instalaciones.'
+                  : 'We invest in renewable energy from the start, prioritizing solar panels in our facilities.',
+                stat: lang === 'es' ? 'Solar' : 'Solar',
+                statLabel: lang === 'es' ? 'energia limpia' : 'clean energy',
               },
               {
-                title: lang === 'es' ? 'Gestion Integral del Agua' : 'Integrated Water Management',
+                title: lang === 'es' ? 'Gestion del Agua' : 'Water Management',
                 desc: lang === 'es'
-                  ? 'Invertimos en sistemas de riego de precision que reducen el consumo de agua hasta un 30% sin comprometer la calidad.'
-                  : 'We invest in precision irrigation systems that reduce water consumption by up to 30%.',
-                stat: '30%',
-                statLabel: lang === 'es' ? 'ahorro de agua' : 'water savings',
+                  ? 'Aplicamos sistemas de riego eficiente en nuestras parcelas, cuidando este recurso vital.'
+                  : 'We apply efficient irrigation systems in our plots, caring for this vital resource.',
+                stat: lang === 'es' ? 'Riego' : 'Irrigation',
+                statLabel: lang === 'es' ? 'eficiente' : 'efficient',
               },
               {
-                title: lang === 'es' ? 'Biodiversidad y Ecosistemas' : 'Biodiversity & Ecosystems',
+                title: lang === 'es' ? 'Biodiversidad' : 'Biodiversity',
                 desc: lang === 'es'
-                  ? 'Mantenemos areas de vegetacion natural en nuestras parcelas, fomentando la polinizacion natural y protegiendo especies locales.'
-                  : 'We maintain natural vegetation areas, promoting natural pollination and protecting local species.',
-                stat: '100%',
-                statLabel: lang === 'es' ? 'polinizacion natural' : 'natural pollination',
+                  ? 'Mantenemos areas naturales en nuestras parcelas, fomentando la polinizacion y protegiendo especies locales.'
+                  : 'We maintain natural areas in our plots, promoting pollination and protecting local species.',
+                stat: lang === 'es' ? 'Natural' : 'Natural',
+                statLabel: lang === 'es' ? 'polinizacion' : 'pollination',
               },
               {
-                title: lang === 'es' ? 'Economia Circular' : 'Circular Economy',
+                title: lang === 'es' ? 'Aprovechamiento Integral' : 'Full Utilization',
                 desc: lang === 'es'
-                  ? 'Los subproductos del procesado se transforman en otros productos de valor, minimizando el desperdicio.'
-                  : 'Processing by-products are transformed into valuable products, minimizing waste.',
-                stat: '0%',
-                statLabel: lang === 'es' ? 'desperdicio' : 'waste',
+                  ? 'Buscamos aprovechar los subproductos del procesado, minimizando el desperdicio desde nuestros primeros pasos.'
+                  : 'We seek to utilize processing by-products, minimizing waste from our first steps.',
+                stat: lang === 'es' ? 'Cero' : 'Zero',
+                statLabel: lang === 'es' ? 'objetivo desperdicio' : 'waste goal',
               },
             ].map((item, i) => (
               <div key={i} className="bg-card rounded-2xl border border-border p-8 hover:border-primary/30 hover:shadow-xl hover:shadow-primary/5 transition-all">

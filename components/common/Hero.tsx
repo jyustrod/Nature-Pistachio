@@ -1,10 +1,8 @@
-import Image from 'next/image';
-
 interface HeroProps {
   lang: 'es' | 'en';
   title: string;
   description: string;
-  backgroundImage?: string;
+  backgroundColor?: 'primary' | 'secondary' | 'earth' | 'green';
   cta1?: {
     label: string;
     href: string;
@@ -16,41 +14,50 @@ interface HeroProps {
   compact?: boolean;
 }
 
+const backgroundStyles = {
+  primary: {
+    backgroundColor: '#2b4533',
+  },
+  secondary: {
+    backgroundColor: '#875a38',
+  },
+  earth: {
+    backgroundColor: '#6b4423',
+  },
+  green: {
+    backgroundColor: '#24392b',
+  },
+};
+
 export function Hero({
   lang,
   title,
   description,
-  backgroundImage = '/images/hero-home.jpg',
+  backgroundColor = 'primary',
   cta1,
   cta2,
   compact = false,
 }: HeroProps) {
-  return (
-    <section className={`relative w-full ${compact ? 'h-[50vh] min-h-[400px]' : 'h-[85vh] min-h-[600px]'} flex items-end overflow-hidden`}>
-      {/* Background Image */}
-      <Image
-        src={backgroundImage}
-        alt=""
-        fill
-        className="object-cover"
-        priority
-        sizes="100vw"
-      />
+  const heightClass = compact ? 'h-[55vh] min-h-[450px]' : 'h-[75vh] min-h-[550px]';
 
-      {/* Overlay - warm dark gradient from bottom */}
-      <div className="absolute inset-0 bg-gradient-to-t from-earth-950/90 via-earth-950/40 to-transparent" />
+  return (
+    <section
+      className={`relative w-full ${heightClass} flex items-start overflow-hidden`}
+      style={backgroundStyles[backgroundColor]}
+    >
+      {/* No image, just gradient background */}
 
       {/* Content */}
-      <div className="relative z-10 w-full pb-16 md:pb-20 lg:pb-24">
+      <div className="relative z-10 w-full pt-16 md:pt-20 lg:pt-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             {/* Decorative line */}
-            <div className="w-16 h-0.5 bg-secondary mb-6" />
+            <div className="w-16 h-0.5 bg-white mb-6" />
 
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-sans font-bold text-white mb-6 leading-tight text-balance">
               {title}
             </h1>
-            <p className="text-lg md:text-xl text-earth-200 mb-10 font-body leading-relaxed max-w-2xl text-pretty">
+            <p className="text-lg md:text-xl text-white/90 mb-10 font-body leading-relaxed max-w-2xl text-pretty">
               {description}
             </p>
 
@@ -78,9 +85,6 @@ export function Hero({
           </div>
         </div>
       </div>
-
-      {/* Bottom fade to background */}
-      <div className="absolute bottom-0 left-0 right-0 h-8 bg-gradient-to-t from-background to-transparent z-10" />
     </section>
   );
 }

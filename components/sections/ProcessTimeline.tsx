@@ -38,9 +38,10 @@ export function ProcessTimeline({ steps, lang }: ProcessTimelineProps) {
                     src={step.image}
                     alt={getTranslation(lang, step.title)}
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                    quality={75}
+                    className="object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-earth-950/30 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
                 </div>
                 <div className="p-6">
                   <h3 className="text-lg font-sans font-bold text-card-foreground mb-2">

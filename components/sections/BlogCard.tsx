@@ -16,9 +16,9 @@ export function BlogCard({ article, lang }: BlogCardProps) {
           src={article.image}
           alt={article.title}
           fill
-          className="object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+          className="object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-earth-950/40 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
         {article.featured && (
           <div className="absolute top-4 right-4 bg-secondary text-secondary-foreground px-4 py-1.5 rounded-full text-xs font-body font-bold tracking-wider uppercase">
             Destacado

@@ -16,7 +16,7 @@ export default async function AboutPage({ params }: PageProps) {
         lang={lang}
         title={t('about.subtitle')}
         description={t('about.description')}
-        backgroundImage="/images/hero-about.jpg"
+        backgroundColor="green"
         compact
       />
 
@@ -72,7 +72,6 @@ export default async function AboutPage({ params }: PageProps) {
                 src="/images/card-about.jpg"
                 alt="Agricultores de Nature Pistachio"
                 fill
-                className="object-cover"
               />
             </div>
             <div>
@@ -81,15 +80,14 @@ export default async function AboutPage({ params }: PageProps) {
                 {lang === 'es' ? 'Nuestro Compromiso' : 'Our Commitment'}
               </h2>
               <p className="text-muted-foreground font-body leading-relaxed mb-6">
-                Nature Pistachio es resultado de la union de agricultores visionarios que
-                vieron en el cultivo sostenible del pistacho una oportunidad para generar
-                valor duradero. Con mas de 20 anos de experiencia, hemos consolidado
-                un modelo de negocio que equilibra rentabilidad con responsabilidad ambiental.
+                {lang === 'es'
+                  ? 'Nature Pistachio es una cooperativa recién constituida por agricultores que creen en el cultivo sostenible del pistacho. Estamos en nuestros primeros años, construyendo un modelo transparente que equilibra calidad con responsabilidad ambiental.'
+                  : 'Nature Pistachio is a recently formed cooperative of farmers who believe in sustainable pistachio cultivation. We are in our early years, building a transparent model that balances quality with environmental responsibility.'}
               </p>
               <p className="text-muted-foreground font-body leading-relaxed">
-                Cada paso en nuestro proceso productivo esta disenado para garantizar
-                la maxima calidad. Desde la seleccion de variedades hasta el almacenaje
-                final, aplicamos los mas altos estandares internacionales.
+                {lang === 'es'
+                  ? 'Cada paso en nuestro proceso productivo está diseñado con cuidado. Desde la selección de variedades hasta el almacenaje final, aplicamos métodos que garantizan trazabilidad y un trato cercano con cada distribuidor.'
+                  : 'Each step in our production process is carefully designed. From variety selection to final storage, we apply methods that ensure traceability and close contact with each distributor.'}
               </p>
             </div>
           </div>
@@ -102,9 +100,9 @@ export default async function AboutPage({ params }: PageProps) {
                 {lang === 'es' ? 'Nuestro Equipo' : 'Our Team'}
               </h2>
               <p className="text-muted-foreground font-body leading-relaxed">
-                Contamos con un equipo multidisciplinario de agronomos, ingenieros
-                y especialistas en comercializacion que trabajan dia a dia para superar
-                las expectativas de nuestros clientes distribuidores.
+                {lang === 'es'
+                  ? 'Somos un equipo pequeño pero comprometido: agricultores, técnicos y comerciales que trabajamos día a día para cuidar cada campaña y ofrecer un servicio cercano a distribuidores que valoran el origen y la transparencia.'
+                  : 'We are a small but committed team: farmers, technicians, and sales staff working day by day to care for each season and offer close service to distributors who value origin and transparency.'}
               </p>
             </div>
             <div className="relative h-[400px] rounded-3xl overflow-hidden order-1 lg:order-2">
