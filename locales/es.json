@@ -1,0 +1,102 @@
+{
+  "common": {
+    "home": "Inicio",
+    "about": "Nosotros",
+    "ourPistachio": "Nuestro Pistacho",
+    "processes": "Procesos",
+    "sustainability": "Sostenibilidad",
+    "certifications": "Certificaciones",
+    "commercialization": "Comercialización",
+    "blog": "Blog",
+    "contact": "Contacto",
+    "requestInfo": "Solicitar Información",
+    "contactSales": "Contactar Comercial",
+    "language": "Idioma"
+  },
+  "home": {
+    "title": "Nature Pistachio",
+    "heroTitle": "Pistacho de Excelencia para Distribuidores Globales",
+    "heroDescription": "Calidad, trazabilidad y tecnología desde el campo hasta tu puerta. Somos tu socio de confianza en frutos secos premium.",
+    "featuredSection": "Destacados",
+    "learnMore": "Saber Más"
+  },
+  "about": {
+    "title": "Quiénes Somos",
+    "subtitle": "Nature Pistachio - Cooperativa de Excelencia",
+    "description": "Nature Pistachio es una cooperativa de agricultores pionera en el cultivo sostenible y procesado profesional de pistacho de alta calidad. Con más de 20 años de experiencia, nos dedicamos a ofrecer productos certificados a distribuidores nacionales e internacionales.",
+    "mission": "Nuestra Misión",
+    "missionText": "Producir pistacho de excelencia mediante prácticas sostenibles y tecnología avanzada, posicionándonos como líderes en calidad y confiabilidad.",
+    "vision": "Nuestra Visión",
+    "visionText": "Ser el partner preferido de distribuidores y empresas alimentarias en todo el mundo.",
+    "values": "Nuestros Valores",
+    "valuesList": "Sostenibilidad | Transparencia | Calidad | Innovación | Compromiso con el cliente"
+  },
+  "pistachio": {
+    "title": "Nuestro Pistacho",
+    "description": "Pistacho ecológico premium, cultivado con métodos responsables",
+    "characteristics": "Características",
+    "traceability": "Trazabilidad",
+    "quality": "Calidad Premium",
+    "ecology": "Cultivo Ecológico"
+  },
+  "processes": {
+    "title": "Procesos de Producción",
+    "description": "Tecnología avanzada para máxima eficiencia y calidad certificada",
+    "steps": {
+      "cultivation": "Cultivo y Cuidado",
+      "harvest": "Cosecha",
+      "reception": "Recepción en Planta",
+      "drying": "Secado y Clasificación",
+      "quality": "Control de Calidad",
+      "storage": "Almacenaje para Distribución"
+    }
+  },
+  "sustainability": {
+    "title": "Sostenibilidad",
+    "description": "Comprometidos con la gestión del agua, biodiversidad y prácticas agrícolas regenerativas",
+    "waterManagement": "Gestión del Agua",
+    "renewableEnergy": "Energía Renovable",
+    "biodiversity": "Biodiversidad",
+    "regenerative": "Prácticas Regenerativas"
+  },
+  "certifications": {
+    "title": "Certificaciones",
+    "description": "Certificaciones que reflejan nuestro estándar de calidad y compromiso global"
+  },
+  "commercialization": {
+    "title": "Comercialización",
+    "description": "Distribuimos pistacho de alta calidad directamente desde nuestra planta cooperativa"
+  },
+  "blog": {
+    "title": "Noticias y Blog",
+    "description": "Mantente informado sobre nuestras novedades e innovaciones",
+    "readMore": "Leer Más",
+    "postedOn": "Publicado el"
+  },
+  "contact": {
+    "title": "Contacto",
+    "description": "Solicita información sobre nuestros productos y servicios",
+    "form": {
+      "fullName": "Nombre Completo",
+      "company": "Empresa / Distribuidor",
+      "country": "País",
+      "email": "Correo Electrónico",
+      "phone": "Teléfono",
+      "message": "Mensaje",
+      "send": "Enviar",
+      "required": "Campo requerido",
+      "invalidEmail": "Email inválido",
+      "success": "Mensaje enviado correctamente",
+      "error": "Error al enviar el mensaje"
+    }
+  },
+  "footer": {
+    "about": "Acerca de",
+    "quickLinks": "Enlaces Rápidos",
+    "followUs": "Síguenos",
+    "legalInfo": "Información Legal",
+    "privacy": "Política de Privacidad",
+    "terms": "Términos de Servicio",
+    "copyright": "© 2026 Nature Pistachio. Todos los derechos reservados."
+  }
+}

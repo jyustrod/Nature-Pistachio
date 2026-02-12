@@ -1,0 +1,102 @@
+{
+  "common": {
+    "home": "Home",
+    "about": "About",
+    "ourPistachio": "Our Pistachio",
+    "processes": "Processes",
+    "sustainability": "Sustainability",
+    "certifications": "Certifications",
+    "commercialization": "Commercialization",
+    "blog": "Blog",
+    "contact": "Contact",
+    "requestInfo": "Request Information",
+    "contactSales": "Contact Sales",
+    "language": "Language"
+  },
+  "home": {
+    "title": "Nature Pistachio",
+    "heroTitle": "Premium Pistachio for Global Distributors",
+    "heroDescription": "Quality, traceability and technology from field to door. We are your trusted partner in premium nuts.",
+    "featuredSection": "Featured",
+    "learnMore": "Learn More"
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Nature Pistachio - Cooperative of Excellence",
+    "description": "Nature Pistachio is a pioneer cooperative of farmers dedicated to sustainable cultivation and professional processing of premium pistachio. With over 20 years of experience, we serve national and international distributors.",
+    "mission": "Our Mission",
+    "missionText": "To produce premium pistachio through sustainable practices and advanced technology, positioning ourselves as leaders in quality and reliability.",
+    "vision": "Our Vision",
+    "visionText": "To be the preferred partner of distributors and food companies worldwide.",
+    "values": "Our Values",
+    "valuesList": "Sustainability | Transparency | Quality | Innovation | Customer Commitment"
+  },
+  "pistachio": {
+    "title": "Our Pistachio",
+    "description": "Premium organic pistachio, cultivated with responsible methods",
+    "characteristics": "Characteristics",
+    "traceability": "Traceability",
+    "quality": "Premium Quality",
+    "ecology": "Organic Cultivation"
+  },
+  "processes": {
+    "title": "Production Processes",
+    "description": "Advanced technology for maximum efficiency and certified quality",
+    "steps": {
+      "cultivation": "Cultivation and Care",
+      "harvest": "Harvest",
+      "reception": "Plant Reception",
+      "drying": "Drying and Classification",
+      "quality": "Quality Control",
+      "storage": "Storage for Distribution"
+    }
+  },
+  "sustainability": {
+    "title": "Sustainability",
+    "description": "Committed to water management, biodiversity and regenerative agricultural practices",
+    "waterManagement": "Water Management",
+    "renewableEnergy": "Renewable Energy",
+    "biodiversity": "Biodiversity",
+    "regenerative": "Regenerative Practices"
+  },
+  "certifications": {
+    "title": "Certifications",
+    "description": "Certifications that reflect our quality standards and global commitment"
+  },
+  "commercialization": {
+    "title": "Commercialization",
+    "description": "We distribute premium pistachio directly from our cooperative plant"
+  },
+  "blog": {
+    "title": "News and Blog",
+    "description": "Stay informed about our news and innovations",
+    "readMore": "Read More",
+    "postedOn": "Posted on"
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Request information about our products and services",
+    "form": {
+      "fullName": "Full Name",
+      "company": "Company / Distributor",
+      "country": "Country",
+      "email": "Email Address",
+      "phone": "Phone",
+      "message": "Message",
+      "send": "Send",
+      "required": "Required field",
+      "invalidEmail": "Invalid email",
+      "success": "Message sent successfully",
+      "error": "Error sending message"
+    }
+  },
+  "footer": {
+    "about": "About",
+    "quickLinks": "Quick Links",
+    "followUs": "Follow Us",
+    "legalInfo": "Legal Information",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "copyright": "© 2026 Nature Pistachio. All rights reserved."
+  }
+}
