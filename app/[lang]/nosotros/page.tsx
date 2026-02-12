@@ -81,8 +81,8 @@ export default async function AboutPage({ params }: PageProps) {
               </h2>
               <p className="text-muted-foreground font-body leading-relaxed mb-6">
                 {lang === 'es'
-                  ? 'Nature Pistachio es una cooperativa recién constituida por agricultores que creen en el cultivo sostenible del pistacho. Estamos en nuestros primeros años, construyendo un modelo transparente que equilibra calidad con responsabilidad ambiental.'
-                  : 'Nature Pistachio is a recently formed cooperative of farmers who believe in sustainable pistachio cultivation. We are in our early years, building a transparent model that balances quality with environmental responsibility.'}
+                  ? 'Nature Pistachio, S. Coop. de CLM es una cooperativa recién constituida por agricultores que creen en el cultivo sostenible del pistacho. Estamos en nuestros primeros años, construyendo un modelo transparente que equilibra calidad con responsabilidad ambiental.'
+                  : 'Nature Pistachio, S. Coop. de CLM is a recently formed cooperative of farmers who believe in sustainable pistachio cultivation. We are in our early years, building a transparent model that balances quality with environmental responsibility.'}
               </p>
               <p className="text-muted-foreground font-body leading-relaxed">
                 {lang === 'es'

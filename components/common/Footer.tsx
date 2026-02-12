@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { getTranslation } from '@/lib/translations';
 
 interface FooterProps {
@@ -19,13 +20,18 @@ export function Footer({ lang }: FooterProps) {
           {/* About */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-6">
-              <div className="h-10 w-10 bg-primary rounded-full flex items-center justify-center">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" className="text-primary-foreground">
-                  <path d="M12 2C8 2 4 6 4 10c0 3 2 6 5 8l3 4 3-4c3-2 5-5 5-8 0-4-4-8-8-8z" fill="currentColor" opacity="0.3"/>
-                  <path d="M12 6c-2 0-4 2-4 4s2 4 4 4 4-2 4-4-2-4-4-4z" fill="currentColor"/>
-                </svg>
+              <div className="relative h-10 w-10">
+                <Image
+                  src="/images/logo.jpeg"
+                  alt="Nature Pistachio Logo"
+                  fill
+                  className="object-contain rounded-full"
+                />
               </div>
-              <span className="font-sans text-xl font-bold text-foreground">Nature Pistachio</span>
+              <div>
+                <span className="block font-sans text-lg font-bold text-foreground leading-tight">Nature Pistachio</span>
+                <span className="block text-[10px] text-muted-foreground font-body">S. Coop. de CLM</span>
+              </div>
             </div>
             <p className="text-muted-foreground text-sm font-body leading-relaxed">
               Cooperativa de pistacho sostenible en Corral de Almaguer para distribuidores.

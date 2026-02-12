@@ -22,8 +22,8 @@
   },
   "about": {
     "title": "Quiénes Somos",
-    "subtitle": "Cooperativa joven y cercana",
-    "description": "Nature Pistachio es una cooperativa reciente de agricultores en Corral de Almaguer, unida para cultivar y procesar pistacho de calidad. Empezamos a pequeña escala, con procesos claros y un crecimiento responsable junto a distribuidores que valoran el origen.",
+    "subtitle": "Agricultores comprometidos con el pistacho de calidad",
+    "description": "Nature Pistachio, S. Coop. de CLM es una cooperativa reciente de agricultores en Corral de Almaguer, unida para cultivar y procesar pistacho de calidad. Empezamos a pequeña escala, con procesos claros y un crecimiento responsable junto a distribuidores que valoran el origen.",
     "mission": "Nuestra Misión",
     "missionText": "Producir pistacho de alta calidad con prácticas sostenibles, priorizando cercanía, transparencia y consistencia en cada campaña.",
     "vision": "Nuestra Visión",
@@ -41,7 +41,7 @@
   },
   "processes": {
     "title": "Procesos de Producción",
-    "description": "Tecnología avanzada para máxima eficiencia y calidad certificada",
+    "description": "Desde el cultivo hasta el almacenaje, cada etapa está diseñada con precisión y control de calidad",
     "steps": {
       "cultivation": "Cultivo y Cuidado",
       "harvest": "Cosecha",
@@ -97,6 +97,6 @@
     "legalInfo": "Información Legal",
     "privacy": "Política de Privacidad",
     "terms": "Términos de Servicio",
-    "copyright": "© 2026 Nature Pistachio. Todos los derechos reservados."
+    "copyright": "© 2026 Nature Pistachio, S. Coop. de CLM. Todos los derechos reservados."
   }
 }

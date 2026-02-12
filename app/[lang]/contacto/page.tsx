@@ -33,11 +33,12 @@ export default async function ContactPage({ params }: PageProps) {
                 </svg>
               </div>
               <h3 className="text-lg font-sans font-bold text-foreground mb-3">
-                {lang === 'es' ? 'Direccion' : 'Address'}
+                {lang === 'es' ? 'Dirección' : 'Address'}
               </h3>
               <p className="text-muted-foreground text-sm font-body leading-relaxed">
-                Poligono Industrial Norte<br />
-                Albacete, Espana
+                C. María de Pacheco, 29<br />
+                45880 Corral de Almaguer<br />
+                Toledo, España
               </p>
             </div>
 

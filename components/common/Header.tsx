@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState } from 'react';
 import { getTranslation } from '@/lib/translations';
 import { navigationLinks } from '@/data/mockup';
@@ -18,18 +19,20 @@ export function Header({ lang }: HeaderProps) {
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
           <Link href={`/${lang}`} className="flex items-center gap-3 group">
-            <div className="h-10 w-10 bg-primary rounded-full flex items-center justify-center transition-transform group-hover:scale-105">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" className="text-primary-foreground">
-                <path d="M12 2C8 2 4 6 4 10c0 3 2 6 5 8l3 4 3-4c3-2 5-5 5-8 0-4-4-8-8-8z" fill="currentColor" opacity="0.3"/>
-                <path d="M12 6c-2 0-4 2-4 4s2 4 4 4 4-2 4-4-2-4-4-4z" fill="currentColor"/>
-              </svg>
+            <div className="relative h-10 w-10 transition-transform group-hover:scale-105">
+              <Image
+                src="/images/logo.jpeg"
+                alt="Nature Pistachio Logo"
+                fill
+                className="object-contain rounded-full"
+              />
             </div>
             <div className="hidden sm:block">
-              <span className="block font-sans text-xl font-bold text-foreground tracking-tight">
+              <span className="block font-sans text-lg font-bold text-foreground tracking-tight leading-tight">
                 Nature Pistachio
               </span>
-              <span className="block text-xs text-muted-foreground font-body tracking-widest uppercase">
-                Cooperativa de Excelencia
+              <span className="block text-[10px] text-muted-foreground font-body tracking-wide">
+                S. Coop. de CLM
               </span>
             </div>
           </Link>
