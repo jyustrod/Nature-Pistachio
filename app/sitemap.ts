@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { languages } from '@/lib/translations';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://www.naturepistachio.com';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.naturepistachio.com';
 
   const routes = ['', '/nosotros', '/nuestro-pistacho', '/procesos', '/sostenibilidad', '/certificaciones', '/comercializacion', '/blog', '/contacto'];
 

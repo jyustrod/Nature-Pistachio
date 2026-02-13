@@ -12,6 +12,10 @@ interface HeaderProps {
 
 export function Header({ lang }: HeaderProps) {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const pathname = usePathname();
+
+  // Obtener la ruta sin el idioma para mantenerla al cambiar de idioma
+  const pathWithoutLang = pathname.replace(/^\/(es|en)/, '') || '';
 
   return (
     <header className="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
@@ -56,7 +60,7 @@ export function Header({ lang }: HeaderProps) {
             {/* Language Switcher */}
             <div className="flex gap-1 bg-accent rounded-full p-1">
               <Link
-                href={`/es`}
+                href={`/es${pathWithoutLang}`}
                 className={`px-3 py-1.5 rounded-full text-xs font-body font-bold transition-all ${
                   lang === 'es'
                     ? 'bg-primary text-primary-foreground shadow-sm'
@@ -66,7 +70,7 @@ export function Header({ lang }: HeaderProps) {
                 ES
               </Link>
               <Link
-                href={`/en`}
+                href={`/en${pathWithoutLang}`}
                 className={`px-3 py-1.5 rounded-full text-xs font-body font-bold transition-all ${
                   lang === 'en'
                     ? 'bg-primary text-primary-foreground shadow-sm'

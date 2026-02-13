@@ -1,0 +1,21 @@
+# Archivos a ignorar en Vercel
+node_modules
+.next
+.env*.local
+.DS_Store
+*.log
+.git
+.vscode
+.idea
+
+# Archivos de desarrollo
+__v0_runtime_loader.js
+__v0_devtools.tsx
+__v0_jsx-dev-runtime.ts
+
+# Archivos de documentación que no son necesarios en producción
+COMPONENTES.ts
+DOCUMENTACION.md
+INICIO_RAPIDO.sh
+scripts/
+
