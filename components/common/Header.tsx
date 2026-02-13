@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
+import { usePathname } from 'next/navigation';
 import { getTranslation } from '@/lib/translations';
 import { navigationLinks } from '@/data/mockup';
 
