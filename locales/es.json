@@ -1,0 +1,102 @@
+{
+  "common": {
+    "home": "Inicio",
+    "about": "Nosotros",
+    "ourPistachio": "Nuestro Pistacho",
+    "processes": "Procesos",
+    "sustainability": "Sostenibilidad",
+    "certifications": "Certificaciones",
+    "commercialization": "Comercialización",
+    "blog": "Blog",
+    "contact": "Contacto",
+    "requestInfo": "Solicitar Información",
+    "contactSales": "Contactar Comercial",
+    "language": "Idioma"
+  },
+  "home": {
+    "title": "Nature Pistachio",
+    "heroTitle": "Pistacho de una cooperativa joven y cercana",
+    "heroDescription": "Somos una cooperativa pequeña y reciente. Cuidamos cada lote con trazabilidad y trato directo, creciendo de forma responsable.",
+    "featuredSection": "Destacados",
+    "learnMore": "Saber Más"
+  },
+  "about": {
+    "title": "Quiénes Somos",
+    "subtitle": "Agricultores comprometidos con el pistacho de calidad",
+    "description": "Nature Pistachio, S. Coop. de CLM es una cooperativa reciente de agricultores en Corral de Almaguer, unida para cultivar y procesar pistacho de calidad. Empezamos a pequeña escala, con procesos claros y un crecimiento responsable junto a distribuidores que valoran el origen.",
+    "mission": "Nuestra Misión",
+    "missionText": "Producir pistacho de alta calidad con prácticas sostenibles, priorizando cercanía, transparencia y consistencia en cada campaña.",
+    "vision": "Nuestra Visión",
+    "visionText": "Crecer paso a paso con socios comerciales que aprecian una cooperativa joven y comprometida.",
+    "values": "Nuestros Valores",
+    "valuesList": "Cercanía | Transparencia | Calidad | Cuidado del campo | Crecimiento responsable"
+  },
+  "pistachio": {
+    "title": "Nuestro Pistacho",
+    "description": "Pistacho ecológico premium, cultivado con métodos responsables",
+    "characteristics": "Características",
+    "traceability": "Trazabilidad",
+    "quality": "Calidad Premium",
+    "ecology": "Cultivo Ecológico"
+  },
+  "processes": {
+    "title": "Procesos de Producción",
+    "description": "Desde el cultivo hasta el almacenaje, cada etapa está diseñada con precisión y control de calidad",
+    "steps": {
+      "cultivation": "Cultivo y Cuidado",
+      "harvest": "Cosecha",
+      "reception": "Recepción en Planta",
+      "drying": "Secado y Clasificación",
+      "quality": "Control de Calidad",
+      "storage": "Almacenaje para Distribución"
+    }
+  },
+  "sustainability": {
+    "title": "Sostenibilidad",
+    "description": "Comprometidos con la gestión del agua, biodiversidad y prácticas agrícolas regenerativas",
+    "waterManagement": "Gestión del Agua",
+    "renewableEnergy": "Energía Renovable",
+    "biodiversity": "Biodiversidad",
+    "regenerative": "Prácticas Regenerativas"
+  },
+  "certifications": {
+    "title": "Certificaciones",
+    "description": "Certificaciones que reflejan nuestro estándar de calidad y compromiso global"
+  },
+  "commercialization": {
+    "title": "Comercialización",
+    "description": "Distribuimos pistacho de calidad desde nuestra planta en Corral de Almaguer, con trato directo y lotes cuidados"
+  },
+  "blog": {
+    "title": "Noticias y Blog",
+    "description": "Mantente informado sobre nuestras novedades e innovaciones",
+    "readMore": "Leer Más",
+    "postedOn": "Publicado el"
+  },
+  "contact": {
+    "title": "Contacto",
+    "description": "Solicita información sobre nuestros productos y servicios",
+    "form": {
+      "fullName": "Nombre Completo",
+      "company": "Empresa / Distribuidor",
+      "country": "País",
+      "email": "Correo Electrónico",
+      "phone": "Teléfono",
+      "message": "Mensaje",
+      "send": "Enviar",
+      "required": "Campo requerido",
+      "invalidEmail": "Email inválido",
+      "success": "Mensaje enviado correctamente",
+      "error": "Error al enviar el mensaje"
+    }
+  },
+  "footer": {
+    "about": "Acerca de",
+    "quickLinks": "Enlaces Rápidos",
+    "followUs": "Síguenos",
+    "legalInfo": "Información Legal",
+    "privacy": "Política de Privacidad",
+    "terms": "Términos de Servicio",
+    "copyright": "© 2026 Nature Pistachio, S. Coop. de CLM. Todos los derechos reservados."
+  }
+}

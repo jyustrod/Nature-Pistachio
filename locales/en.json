@@ -1,0 +1,102 @@
+{
+  "common": {
+    "home": "Home",
+    "about": "About",
+    "ourPistachio": "Our Pistachio",
+    "processes": "Processes",
+    "sustainability": "Sustainability",
+    "certifications": "Certifications",
+    "commercialization": "Commercialization",
+    "blog": "Blog",
+    "contact": "Contact",
+    "requestInfo": "Request Information",
+    "contactSales": "Contact Sales",
+    "language": "Language"
+  },
+  "home": {
+    "title": "Nature Pistachio",
+    "heroTitle": "Pistachio from a young, close-knit cooperative",
+    "heroDescription": "We are a small, recently formed cooperative. We care for each lot with traceability and direct contact, growing responsibly.",
+    "featuredSection": "Featured",
+    "learnMore": "Learn More"
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Farmers committed to quality pistachio",
+    "description": "Nature Pistachio, S. Coop. de CLM is a recently formed cooperative of farmers in Corral de Almaguer, committed to quality pistachio. We started on a small scale, with clear processes and responsible growth alongside distributors who value origin.",
+    "mission": "Our Mission",
+    "missionText": "Produce high-quality pistachio through sustainable practices, prioritizing closeness, transparency, and consistency each season.",
+    "vision": "Our Vision",
+    "visionText": "Grow step by step with commercial partners who appreciate a young, committed cooperative.",
+    "values": "Our Values",
+    "valuesList": "Closeness | Transparency | Quality | Care for the land | Responsible growth"
+  },
+  "pistachio": {
+    "title": "Our Pistachio",
+    "description": "Premium organic pistachio, cultivated with responsible methods",
+    "characteristics": "Characteristics",
+    "traceability": "Traceability",
+    "quality": "Premium Quality",
+    "ecology": "Organic Cultivation"
+  },
+  "processes": {
+    "title": "Production Processes",
+    "description": "From cultivation to storage, every stage is designed with precision and quality control",
+    "steps": {
+      "cultivation": "Cultivation and Care",
+      "harvest": "Harvest",
+      "reception": "Plant Reception",
+      "drying": "Drying and Classification",
+      "quality": "Quality Control",
+      "storage": "Storage for Distribution"
+    }
+  },
+  "sustainability": {
+    "title": "Sustainability",
+    "description": "Committed to water management, biodiversity and regenerative agricultural practices",
+    "waterManagement": "Water Management",
+    "renewableEnergy": "Renewable Energy",
+    "biodiversity": "Biodiversity",
+    "regenerative": "Regenerative Practices"
+  },
+  "certifications": {
+    "title": "Certifications",
+    "description": "Certifications that reflect our quality standards and global commitment"
+  },
+  "commercialization": {
+    "title": "Commercialization",
+    "description": "We distribute quality pistachio from our plant in Corral de Almaguer, with direct contact and carefully handled lots"
+  },
+  "blog": {
+    "title": "News and Blog",
+    "description": "Stay informed about our news and innovations",
+    "readMore": "Read More",
+    "postedOn": "Posted on"
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Request information about our products and services",
+    "form": {
+      "fullName": "Full Name",
+      "company": "Company / Distributor",
+      "country": "Country",
+      "email": "Email Address",
+      "phone": "Phone",
+      "message": "Message",
+      "send": "Send",
+      "required": "Required field",
+      "invalidEmail": "Invalid email",
+      "success": "Message sent successfully",
+      "error": "Error sending message"
+    }
+  },
+  "footer": {
+    "about": "About",
+    "quickLinks": "Quick Links",
+    "followUs": "Follow Us",
+    "legalInfo": "Legal Information",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "copyright": "© 2026 Nature Pistachio, S. Coop. de CLM. All rights reserved."
+  }
+}
