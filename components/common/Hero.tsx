@@ -146,9 +146,6 @@ export function Hero({
         aria-hidden="true"
       />
 
-      {/* Decorative corner frame lines */}
-      <div className="absolute top-8 left-8 md:top-12 md:left-12 w-16 h-16 border-t-2 border-l-2 border-white/10 rounded-tl-xl pointer-events-none" aria-hidden="true" />
-      <div className="absolute bottom-8 right-8 md:bottom-12 md:right-12 w-16 h-16 border-b-2 border-r-2 border-white/10 rounded-br-xl pointer-events-none" aria-hidden="true" />
 
       {/* Content */}
       <div className="relative z-10 w-full py-6 md:py-8">
