@@ -115,7 +115,7 @@ export default function Home() {
                 <div className="container">
                     <div className="grid-2 align-center">
                         <div className="about-text">
-                            <p>El procesado es el alma que hace único a nuestro pistacho. En Nature Pistachio, las tolvas reciben un oro verde que, a través de maquinaria de última generación, es limpiado, secado, clasificado y almacenado bajo los estándares de trazabilidad más rigurosos del mercado europeo.</p>
+                            <p>El procesado es el alma que hace único a nuestro pistacho. En Nature Pistachio, las tolvas reciben un pistacho que, a través de maquinaria de última generación, es limpiado, secado, clasificado y almacenado bajo los estándares de trazabilidad más rigurosos del mercado europeo.</p>
                             <p>Combinamos la tradición heredada por nuestros 134 socios con innovadoras técnicas de calibración óptica y secado lento. Esto garantiza que las cualidades organolépticas (sabor, textura y color) permanezcan intactas, obteniendo un producto delicado y 100% fiable.</p>
                             <ul className="icon-list mt-md">
                                 <li>✓ Clasificación Óptica de Precisión</li>
