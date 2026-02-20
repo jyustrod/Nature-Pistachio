@@ -13,9 +13,4 @@ __v0_runtime_loader.js
 __v0_devtools.tsx
 __v0_jsx-dev-runtime.ts
 
-# Archivos de documentación que no son necesarios en producción
-COMPONENTES.ts
-DOCUMENTACION.md
-INICIO_RAPIDO.sh
-scripts/
 
