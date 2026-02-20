@@ -11,7 +11,7 @@ export function ProcessTimeline({ steps, lang }: ProcessTimelineProps) {
   const sortedSteps = [...steps].sort((a, b) => a.order - b.order);
 
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-muted">
+    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-muted overflow-hidden">
       <div className="mx-auto max-w-7xl">
         <div className="text-center mb-16">
           <div className="w-16 h-0.5 bg-secondary mx-auto mb-6" />

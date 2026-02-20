@@ -13,10 +13,7 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function generateMetadata({
-  params,
-}: LayoutProps): Promise<Metadata> {
-  const { lang } = await params;
+export async function generateMetadata(): Promise<Metadata> {
   return {
     alternates: {
       languages: {
@@ -35,7 +32,7 @@ export default async function LangLayout({
   const validLang = (languages.find((l) => l.code === lang)?.code || defaultLanguage) as 'es' | 'en';
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen overflow-x-hidden">
       <Header lang={validLang} />
       <main className="flex-grow">
         {children}
