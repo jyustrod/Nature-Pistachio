@@ -66,8 +66,8 @@ export default function Home() {
                             <p>De cultivo dedicado</p>
                         </div>
                         <div className="stat-card">
-                            <h3>42% / 58%</h3>
-                            <p>Producción Ecológica y Convencional</p>
+                            <h3>42%</h3>
+                            <p>Producción Ecológica</p>
                         </div>
                     </div>
                 </div>
@@ -83,7 +83,7 @@ export default function Home() {
                         <div className="about-text">
                             <h2 className="section-title">El Valor del Fruto</h2>
                             <p className="subtitle">El pistacho lo dice todo. Es pequeño, pero encierra todo nuestro trabajo, toda una tierra y el esfuerzo compartido de quienes creen en él.</p>
-                            <p>En Nature Pistachio fomentamos la unión de La Mancha. Cuidamos cada rama con mimo porque cada rama que crece nos recuerda que hemos iniciado una nueva etapa para nuestra cooperativa cooperativa. Al sol de nuestras tierras crecen pistachos premium.</p>
+                            <p>En Nature Pistachio fomentamos la unión de La Mancha. Cuidamos cada rama con dedicación porque cada paso que damos nos recuerda que hemos iniciado una nueva etapa para nuestra cooperativa.</p>
                             <img src="/images/Pistachos.jpg" alt="Pistachos" style={{ marginTop: '2rem', width: '100%', maxHeight: '200px', objectFit: 'cover', borderRadius: 'var(--radius-lg)' }} />
                         </div>
                     </div>
@@ -100,7 +100,7 @@ export default function Home() {
                         <div className="about-text" style={{ direction: 'ltr' }}>
                             <h2 className="section-title">Nuestras Instalaciones</h2>
                             <p className="subtitle">Un espacio donde la tecnología abraza a la naturaleza.</p>
-                            <p>Ubicados en Corral de Almaguer (Toledo), nuestras imponentes instalaciones son un punto de encuentro para más de un centenar de agricultores de la región. Todo el espacio está optimizado para recibir un altísimo volumen de cosecha minimizando los tiempos de espera y garantizando que el pistacho llegue lo más fresco posible a nuestras tolvas.</p>
+                            <p>Ubicados en Corral de Almaguer (Toledo), nuestras instalaciones son un punto de encuentro para más de un centenar de agricultores de la región. El espacio está optimizado para recibir la cosecha minimizando los tiempos de espera y garantizando que el pistacho llegue fresco a nuestras tolvas.</p>
                         </div>
                     </div>
                 </div>
