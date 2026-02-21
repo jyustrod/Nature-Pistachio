@@ -1,9 +1,10 @@
 "use client";
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 export default function Home() {
     const observerRef = useRef(null);
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     useEffect(() => {
         observerRef.current = new IntersectionObserver(
@@ -36,13 +37,20 @@ export default function Home() {
                 <div className="logo">
                     <img src="/images/Logo.jpg" alt="Nature Pistachio Logo" style={{ height: '40px', borderRadius: '4px' }} className="nav-logo" />
                 </div>
-                <ul className="nav-links">
-                    <li><a href="#about">Quiénes Somos</a></li>
-                    <li><a href="#instalaciones">Instalaciones</a></li>
-                    <li><a href="#proceso">Producción</a></li>
-                    <li><a href="#domo">Domo Pistachio</a></li>
-                    <li><a href="#contact">Contacto</a></li>
+                <ul className={`nav-links ${isMobileMenuOpen ? 'mobile-open' : ''}`}>
+                    <li><a href="#about" onClick={() => setIsMobileMenuOpen(false)}>Quiénes Somos</a></li>
+                    <li><a href="#instalaciones" onClick={() => setIsMobileMenuOpen(false)}>Instalaciones</a></li>
+                    <li><a href="#proceso" onClick={() => setIsMobileMenuOpen(false)}>Producción</a></li>
+                    <li><a href="#domo" onClick={() => setIsMobileMenuOpen(false)}>Domo Pistachio</a></li>
+                    <li><a href="#contact" onClick={() => setIsMobileMenuOpen(false)}>Contacto</a></li>
                 </ul>
+                <button 
+                    className="mobile-menu-btn" 
+                    onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                    aria-label="Toggle menu"
+                >
+                    {isMobileMenuOpen ? '✕' : '☰'}
+                </button>
             </nav>
 
             {/* Hero Section */}
