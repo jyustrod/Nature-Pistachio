@@ -75,7 +75,7 @@ export default function Home() {
                                 <li><span>85</span><small>Hombres</small></li>
                                 <li><span>10</span><small>Empresas</small></li>
                             </ul>
-                            <p className="highlight-text">Sembramos historia, cosechamos futuro. La primera campaña en la planta ha sido en 2025, la cual inauguró el 28 de julio el Consejero de Agricultura, D. Julián Martínez Lizán junto con más personalidades. Aquí no solo cultivamos pistachos, cultivamos historias que viajan del corazón de La Mancha al mundo entero.</p>
+                            <p className="highlight-text">Sembramos historia, cosechamos futuro. La primera campaña en la planta ha sido en 2025, la cual inauguró el 24 de julio el Consejero de Agricultura, D. Julián Martínez Lizán junto con más personalidades. Aquí no solo cultivamos pistachos, cultivamos historias que viajan del corazón de La Mancha al mundo entero.</p>
                         </div>
                         <div className="about-image reveal fade-left image-container">
                             <img src="/images/Placa.jpg" alt="Inauguración de la cooperativa" className="parallax-zoom" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: 'var(--radius-lg)' }} />
