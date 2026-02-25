@@ -1,7 +1,6 @@
 'use client';
 
 import Link from 'next/link';
-import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 import { getTranslation } from '@/lib/translations';
@@ -17,7 +16,6 @@ export function Header({ lang }: HeaderProps) {
   const pathname = usePathname();
   const pathWithoutLang = pathname.replace(/^\/(es|en)/, '') || '';
 
-  // Check if we are on the home page (full-screen hero)
   const isHome = pathWithoutLang === '' || pathWithoutLang === '/';
 
   useEffect(() => {
@@ -44,22 +42,21 @@ export function Header({ lang }: HeaderProps) {
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
           <Link href={`/${lang}`} className="flex items-center gap-3 group">
-            <div className="relative h-10 w-10 transition-transform group-hover:scale-105 rounded-full overflow-hidden">
-              <Image
-                src="/images/logo.jpeg"
-                alt="Nature Pistachio Logo"
-                fill
-                className="object-contain"
-              />
+            <div className={`flex items-center justify-center h-10 w-10 rounded-full transition-all group-hover:scale-105 ${
+              textOnHero ? 'bg-primary-foreground/10 border border-primary-foreground/20' : 'bg-primary/10 border border-primary/20'
+            }`}>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" className={`transition-colors duration-300 ${textOnHero ? 'text-secondary' : 'text-primary'}`}>
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5v-5l-3.5 3.5L6 13.5 12 7.5l6 6-1.5 1.5L13 11.5v5h-2z" fill="currentColor" opacity="0.8"/>
+              </svg>
             </div>
             <div className="hidden sm:block">
               <span className={`block font-serif text-lg font-bold leading-tight tracking-tight transition-colors duration-300 ${
-                textOnHero ? 'text-white' : 'text-foreground'
+                textOnHero ? 'text-primary-foreground' : 'text-foreground'
               }`}>
                 Nature Pistachio
               </span>
               <span className={`block text-[10px] font-sans tracking-widest uppercase transition-colors duration-300 ${
-                textOnHero ? 'text-white/60' : 'text-muted-foreground'
+                textOnHero ? 'text-primary-foreground/60' : 'text-muted-foreground'
               }`}>
                 S. Coop. de CLM
               </span>
@@ -77,8 +74,8 @@ export function Header({ lang }: HeaderProps) {
                   className={`px-3 py-2 rounded-lg text-[13px] font-sans font-medium transition-colors duration-300 ${
                     textOnHero
                       ? isActive
-                        ? 'text-white bg-white/10'
-                        : 'text-white/70 hover:text-white hover:bg-white/10'
+                        ? 'text-primary-foreground bg-primary-foreground/10'
+                        : 'text-primary-foreground/70 hover:text-primary-foreground hover:bg-primary-foreground/10'
                       : isActive
                         ? 'text-foreground bg-accent'
                         : 'text-muted-foreground hover:text-foreground hover:bg-accent'
@@ -95,17 +92,17 @@ export function Header({ lang }: HeaderProps) {
           <div className="flex items-center gap-3">
             {/* Language Switcher */}
             <div className={`flex gap-0.5 rounded-full p-1 transition-colors duration-300 ${
-              textOnHero ? 'bg-white/10 backdrop-blur-sm' : 'bg-accent'
+              textOnHero ? 'bg-primary-foreground/10 backdrop-blur-sm' : 'bg-accent'
             }`}>
               <Link
                 href={`/es${pathWithoutLang}`}
                 className={`px-3 py-1.5 rounded-full text-xs font-sans font-bold transition-all ${
                   lang === 'es'
                     ? textOnHero
-                      ? 'bg-white text-foreground shadow-sm'
+                      ? 'bg-primary-foreground text-foreground shadow-sm'
                       : 'bg-primary text-primary-foreground shadow-sm'
                     : textOnHero
-                      ? 'text-white/70 hover:text-white'
+                      ? 'text-primary-foreground/70 hover:text-primary-foreground'
                       : 'text-muted-foreground hover:text-foreground'
                 }`}
               >
@@ -116,10 +113,10 @@ export function Header({ lang }: HeaderProps) {
                 className={`px-3 py-1.5 rounded-full text-xs font-sans font-bold transition-all ${
                   lang === 'en'
                     ? textOnHero
-                      ? 'bg-white text-foreground shadow-sm'
+                      ? 'bg-primary-foreground text-foreground shadow-sm'
                       : 'bg-primary text-primary-foreground shadow-sm'
                     : textOnHero
-                      ? 'text-white/70 hover:text-white'
+                      ? 'text-primary-foreground/70 hover:text-primary-foreground'
                       : 'text-muted-foreground hover:text-foreground'
                 }`}
               >
@@ -131,7 +128,7 @@ export function Header({ lang }: HeaderProps) {
             <button
               className={`lg:hidden p-2 rounded-lg transition-colors ${
                 textOnHero
-                  ? 'text-white hover:bg-white/10'
+                  ? 'text-primary-foreground hover:bg-primary-foreground/10'
                   : 'text-muted-foreground hover:text-foreground hover:bg-accent'
               }`}
               onClick={() => setMobileOpen(!mobileOpen)}

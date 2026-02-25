@@ -1,9 +1,7 @@
-import Image from 'next/image';
-
 interface CardProps {
   title: string;
   description: string;
-  image: string;
+  image?: string;
   icon?: React.ReactNode;
   link?: {
     label: string;
@@ -20,15 +18,21 @@ export function Card({
 }: CardProps) {
   return (
     <div className="group bg-card rounded-3xl overflow-hidden border border-border hover:border-primary/20 transition-all duration-500 hover-lift h-full flex flex-col">
-      {/* Image */}
-      <div className="relative h-64 overflow-hidden image-zoom">
-        <Image
-          src={image}
-          alt={title}
-          fill
-          className="object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-foreground/40 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-500" />
+      {/* Image area or placeholder */}
+      <div className="relative h-64 overflow-hidden bg-muted">
+        {/* Decorative placeholder with brand colors */}
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-secondary/5 to-muted flex items-center justify-center">
+          <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="text-primary/40">
+              <rect x="3" y="3" width="18" height="18" rx="4" stroke="currentColor" strokeWidth="1.5"/>
+              <circle cx="8.5" cy="8.5" r="2" stroke="currentColor" strokeWidth="1.5"/>
+              <path d="M3 16l4-4 3 3 4-5 7 6" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round"/>
+            </svg>
+          </div>
+          <p className="absolute bottom-3 left-0 right-0 text-center text-[10px] text-muted-foreground/50 font-sans tracking-wider uppercase">
+            {'Imagen pendiente'}
+          </p>
+        </div>
       </div>
 
       {/* Content */}

@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import { getTranslation } from '@/lib/translations';
 
 interface FooterProps {
@@ -20,13 +19,10 @@ export function Footer({ lang }: FooterProps) {
           {/* Brand */}
           <div className="lg:col-span-4">
             <div className="flex items-center gap-3 mb-6">
-              <div className="relative h-10 w-10 rounded-full overflow-hidden">
-                <Image
-                  src="/images/logo.jpeg"
-                  alt="Nature Pistachio Logo"
-                  fill
-                  className="object-contain"
-                />
+              <div className="flex items-center justify-center h-10 w-10 rounded-full bg-background/10 border border-background/20">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" className="text-secondary">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5v-5l-3.5 3.5L6 13.5 12 7.5l6 6-1.5 1.5L13 11.5v5h-2z" fill="currentColor" opacity="0.8"/>
+                </svg>
               </div>
               <div>
                 <span className="block font-serif text-lg font-bold text-background leading-tight">Nature Pistachio</span>
