@@ -10,62 +10,64 @@ export function Footer({ lang }: FooterProps) {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-white text-foreground border-t border-border">
-      {/* Top decorative border */}
-      <div className="h-1 bg-gradient-to-r from-primary via-secondary to-primary" />
+    <footer className="bg-foreground text-background">
+      {/* Top decorative line */}
+      <div className="h-[2px] bg-gradient-to-r from-primary via-secondary to-primary" />
 
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
+      <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12 pt-20 pb-12">
         {/* Main Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
-          {/* About */}
-          <div className="lg:col-span-1">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 mb-16">
+          {/* Brand */}
+          <div className="lg:col-span-4">
             <div className="flex items-center gap-3 mb-6">
-              <div className="relative h-10 w-10">
+              <div className="relative h-10 w-10 rounded-full overflow-hidden">
                 <Image
                   src="/images/logo.jpeg"
                   alt="Nature Pistachio Logo"
                   fill
-                  className="object-contain rounded-full"
+                  className="object-contain"
                 />
               </div>
               <div>
-                <span className="block font-sans text-lg font-bold text-foreground leading-tight">Nature Pistachio</span>
-                <span className="block text-[10px] text-muted-foreground font-body">S. Coop. de CLM</span>
+                <span className="block font-serif text-lg font-bold text-background leading-tight">Nature Pistachio</span>
+                <span className="block text-[10px] text-background/50 font-sans tracking-widest uppercase">S. Coop. de CLM</span>
               </div>
             </div>
-            <p className="text-muted-foreground text-sm font-body leading-relaxed">
-              Cooperativa de pistacho sostenible en Corral de Almaguer para distribuidores.
+            <p className="text-background/60 text-sm font-sans leading-relaxed max-w-xs">
+              {lang === 'es'
+                ? 'Cooperativa de pistacho sostenible en Corral de Almaguer para distribuidores.'
+                : 'Sustainable pistachio cooperative in Corral de Almaguer for distributors.'}
             </p>
           </div>
 
           {/* Quick Links */}
-          <div>
-            <h4 className="font-sans font-semibold text-foreground mb-6 text-sm tracking-widest uppercase">
+          <div className="lg:col-span-2">
+            <h4 className="font-sans font-semibold text-background text-xs tracking-[0.2em] uppercase mb-6">
               {getTranslation(lang, 'footer.quickLinks')}
             </h4>
-            <ul className="space-y-3">
+            <ul className="flex flex-col gap-3">
               <li>
-                <Link href={`/${lang}`} className="text-muted-foreground hover:text-primary transition-colors text-sm font-body">
+                <Link href={`/${lang}`} className="text-background/60 hover:text-secondary transition-colors text-sm font-sans">
                   {getTranslation(lang, 'common.home')}
                 </Link>
               </li>
               <li>
-                <Link href={`/${lang}/nosotros`} className="text-muted-foreground hover:text-primary transition-colors text-sm font-body">
+                <Link href={`/${lang}/nosotros`} className="text-background/60 hover:text-secondary transition-colors text-sm font-sans">
                   {getTranslation(lang, 'common.about')}
                 </Link>
               </li>
               <li>
-                <Link href={`/${lang}/nuestro-pistacho`} className="text-muted-foreground hover:text-primary transition-colors text-sm font-body">
+                <Link href={`/${lang}/nuestro-pistacho`} className="text-background/60 hover:text-secondary transition-colors text-sm font-sans">
                   {getTranslation(lang, 'common.ourPistachio')}
                 </Link>
               </li>
               <li>
-                <Link href={`/${lang}/procesos`} className="text-muted-foreground hover:text-primary transition-colors text-sm font-body">
+                <Link href={`/${lang}/procesos`} className="text-background/60 hover:text-secondary transition-colors text-sm font-sans">
                   {getTranslation(lang, 'common.processes')}
                 </Link>
               </li>
               <li>
-                <Link href={`/${lang}/contacto`} className="text-muted-foreground hover:text-primary transition-colors text-sm font-body">
+                <Link href={`/${lang}/contacto`} className="text-background/60 hover:text-secondary transition-colors text-sm font-sans">
                   {getTranslation(lang, 'common.contact')}
                 </Link>
               </li>
@@ -73,14 +75,14 @@ export function Footer({ lang }: FooterProps) {
           </div>
 
           {/* Social */}
-          <div>
-            <h4 className="font-sans font-semibold text-foreground mb-6 text-sm tracking-widest uppercase">
+          <div className="lg:col-span-3">
+            <h4 className="font-sans font-semibold text-background text-xs tracking-[0.2em] uppercase mb-6">
               {getTranslation(lang, 'footer.followUs')}
             </h4>
             <div className="flex gap-3">
               <a
                 href="#"
-                className="w-10 h-10 rounded-full bg-muted flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-all"
+                className="w-11 h-11 rounded-full bg-background/10 flex items-center justify-center text-background/60 hover:bg-secondary hover:text-secondary-foreground transition-all duration-300"
                 aria-label="LinkedIn"
               >
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
@@ -89,7 +91,7 @@ export function Footer({ lang }: FooterProps) {
               </a>
               <a
                 href="#"
-                className="w-10 h-10 rounded-full bg-muted flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-all"
+                className="w-11 h-11 rounded-full bg-background/10 flex items-center justify-center text-background/60 hover:bg-secondary hover:text-secondary-foreground transition-all duration-300"
                 aria-label="Instagram"
               >
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
@@ -98,7 +100,7 @@ export function Footer({ lang }: FooterProps) {
               </a>
               <a
                 href="#"
-                className="w-10 h-10 rounded-full bg-muted flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-all"
+                className="w-11 h-11 rounded-full bg-background/10 flex items-center justify-center text-background/60 hover:bg-secondary hover:text-secondary-foreground transition-all duration-300"
                 aria-label="Facebook"
               >
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
@@ -109,18 +111,18 @@ export function Footer({ lang }: FooterProps) {
           </div>
 
           {/* Legal */}
-          <div>
-            <h4 className="font-sans font-semibold text-foreground mb-6 text-sm tracking-widest uppercase">
+          <div className="lg:col-span-3">
+            <h4 className="font-sans font-semibold text-background text-xs tracking-[0.2em] uppercase mb-6">
               {getTranslation(lang, 'footer.legalInfo')}
             </h4>
-            <ul className="space-y-3">
+            <ul className="flex flex-col gap-3">
               <li>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors text-sm font-body">
+                <a href="#" className="text-background/60 hover:text-secondary transition-colors text-sm font-sans">
                   {getTranslation(lang, 'footer.privacy')}
                 </a>
               </li>
               <li>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors text-sm font-body">
+                <a href="#" className="text-background/60 hover:text-secondary transition-colors text-sm font-sans">
                   {getTranslation(lang, 'footer.terms')}
                 </a>
               </li>
@@ -129,15 +131,15 @@ export function Footer({ lang }: FooterProps) {
         </div>
 
         {/* Divider */}
-        <div className="border-t border-border" />
+        <div className="border-t border-background/10" />
 
         {/* Copyright */}
-        <div className="mt-8 text-center text-muted-foreground text-xs font-body tracking-wide">
-          <p>
-            {getTranslation(lang, 'footer.copyright').replace(
-              '2026',
-              currentYear.toString()
-            )}
+        <div className="mt-8 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+          <p className="text-background/40 text-xs font-sans tracking-wide">
+            {getTranslation(lang, 'footer.copyright').replace('2026', currentYear.toString())}
+          </p>
+          <p className="text-background/30 text-xs font-sans">
+            Corral de Almaguer, Toledo
           </p>
         </div>
       </div>
